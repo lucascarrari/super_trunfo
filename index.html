@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Trunfo</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/01/Turma-do-Chaves-PNG-02.png" class="page-logo"
+            alt="">
+        
+        <h1 class="page-title">Super Trunfo</h1>
+
+        <div class="pontuacao"></div>
+        <div class="cartasRestantes"></div>
+
+        <button onclick="sortearCarta()" id="btnSortear">Sortear Cartas</button>
+
+        <div id="cartaEscolhida"></div> 
+
+        <form id="form">
+            <div id="escolhaAtributo">
+                
+                <div class="opcoes" id="opcoes"></div>
+            </div>        
+            <button type="button" id="btnJogar" onclick="jogar()" disabled="true">Jogar</button>
+            <button type="button" id="btnNovoJogo" onclick="novoJogo()" disabled="true">Nova Rodada</button>
+        </form>
+        <button onclick="reiniciarJogo()" id="reiniciarJogo">Jogar Novamente</button>
+
+        <div id="resultado"></div>       
+
+        <div id="campoBatalha">
+            <div class="cartaJogador"></div>
+            <div class="versus"></div>
+            <div class="cartaMaquina"></div>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
+
